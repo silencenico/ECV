@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    .flex-container-header{
+        display:flex;
+        flex-direction: initial;
+        height:100px;
+        background-color: aqua;
+        margin: 1px;
+    }
+    .flex-container-header:hover{
+        background-color: green;
+    }
+
+    .flex-container-footer{
+        display:flex;
+        flex-direction: initial;
+        height:100px;
+        background-color: yellow;
+        margin: 1px;
+    }
+    
+    .flex-container-main{
+        display:flex;
+        flex-direction:row;
+        height: 800px;
+    }
+    .right{
+        width: 15%;
+        margin: 1px;
+        background-color: blue;
+    }
+    .middle{
+        width: 70%;
+        margin: 1px;
+        background-color:grey;
+    }
+    .left{
+        width: 15%;
+        margin: 1px;
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <div class="flex-container-header"> </div>
+    <div class="flex-container-main"> 
+        <div class="left"> </div>
+        <div class="middle"> </div>
+        <div class="right"> </div>
+    </div>
+    <div class="flex-container-footer"> </div>
+</body>
+</html>

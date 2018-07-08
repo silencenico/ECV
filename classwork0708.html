@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+        $.get("https://randomuser.me/api?results=10", function(data){
+            console.log(data)
+            //var results = data.results
+            const {results} = data
+            results.forEach(element => {
+                $('#content').append("<div>" + element.name.title + " " + element.name.first + " " + element.name.last + "</div>")
+                
+            });
+        });
+});
+</script>
+</head>
+<body>
+    <div id='content'></div>
+</body>
+</html>
